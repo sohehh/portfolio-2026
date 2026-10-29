@@ -1,0 +1,105 @@
+@media all and (max-width: 1024px) {
+  .content {
+    max-width: none;
+    width: calc(100% - 60px);
+  }
+  .content__body--about {
+    grid-template-areas: "info" "skill" "career" "qualification" "education";
+    grid-template-columns: 1fr;
+  }
+  .content__body--about .content__grid--info {
+    border-right: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .content__body--about .content__grid--career .content__grid-date {
+    grid-template-columns: 1fr 2fr;
+  }
+  .content__body--about .content__grid--education .content__grid-date {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-container {
+    gap: 100px;
+  }
+  .content {
+    width: calc(100% - 30px);
+  }
+  .content__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .content__body--about .content__grid--skill .content__grid-list {
+    padding-left: 23px;
+  }
+  .content__body--about .content__grid--career .content__grid-date {
+    grid-template-rows: auto auto;
+    grid-template-columns: none;
+    row-gap: 5px;
+  }
+  .content__body--about .content__grid--education .content__grid-date {
+    grid-template-rows: auto auto;
+    grid-template-columns: none;
+    row-gap: 5px;
+  }
+  .content__body--about .content__grid--education .content__grid-date p {
+    padding-bottom: 15px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .content__header--featured {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .featured__grid {
+    grid-template-columns: 1fr;
+  }
+  .featured__card {
+    display: grid;
+    grid-template-columns: minmax(200px, 0.7fr) 1fr;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+  }
+  .featured__card img {
+    grid-row: span 3;
+    height: 100%;
+  }
+  .featured__number {
+    margin-top: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .content__header--featured {
+    gap: 0;
+  }
+  .featured__intro {
+    padding-bottom: 0;
+    max-width: none;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .featured__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+  }
+  .featured__card img {
+    aspect-ratio: 1.4/1;
+    height: auto;
+  }
+  .featured__number {
+    margin-top: 18px;
+  }
+}/*# sourceMappingURL=index-media.css.map */

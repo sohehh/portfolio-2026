@@ -1,0 +1,27 @@
+//모든 스마트폰
+@media all and (max-width:768px) {
+  .main-container {
+    gap: 100px;
+  }
+  .content {
+    width: calc(100% - 30px);
+  }
+  .content__header {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  // 260520 추가
+  .content__body--projectDetail {
+    grid-template-areas:         
+    "img"   
+    "info"     
+    "etc"        
+    "comment";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    .content__grid--etc ,
+    .content__grid--info {
+      border-left: 0px;
+    }
+  }
+}

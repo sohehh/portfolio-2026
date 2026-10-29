@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+/* Noto Sans KR */
+/* default font weight : 500 */
+/* font-family: "Noto Sans" */
+* {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    /* word-break: break-word;      일본어 줄바꿈 허용 */
+    /* overflow-wrap: break-word;   긴 단어 줄바꿈 (보조적) */
+}

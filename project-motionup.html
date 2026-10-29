@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motionup 프로젝트</title>
+    <link rel="stylesheet" href="./css/basic/reset.css" />
+    <link rel="stylesheet" href="./css/basic/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/basic/typography.css" />
+    <link rel="stylesheet" href="./css/basic/common.css" />
+    <link rel="stylesheet" href="./css/components/swiper-custom.css" />
+    <link rel="stylesheet" href="./css/components/site-nav.css" />
+    <link rel="stylesheet" href="./css/pages/project-detail.css" />
+    <link rel="stylesheet" href="./css/pages/project-detail-media.css" />
+  </head>
+  <script defer src="./js/loading.js"></script>
+  <body>
+    <div class="wrap">
+      <!-- 로딩 스크립트 -->
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+      </div>
+      <header class="site-header" aria-label="주요 메뉴">
+        <a class="site-header__logo gra-neon fs-15 fw-900" href="./index.html"
+          >&lt; SOHEE /&gt;</a
+        >
+        <button
+          class="site-header__toggle"
+          type="button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+          <ul class="site-nav__list">
+            <li>
+              <a class="site-nav__link" href="./index.html#about">ABOUT</a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="./index.html#featured"
+                >FEATURED</a
+              >
+            </li>
+            <li>
+              <a
+                class="site-nav__link"
+                href="./index.html#projects"
+                aria-current="page"
+                >PROJECTS</a
+              >
+            </li>
+            <li>
+              <a class="site-nav__link" href="./publishing-cases.html"
+                >PUBLISHING</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container">
+        <!-- 프로젝트 디테일 섹션 -->
+        <section class="content content--projectDetail">
+          <header class="content__header">
+            <h2 class="content__header-title gra-neon fs-72">
+              < Project Detail />
+            </h2>
+          </header>
+          <div class="content__body content__body--projectDetail">
+            <!-- img -->
+            <div class="content__grid content__grid--img">
+              <img
+                class="content__grid-img"
+                src="./img/port-folio__motionup-main.png"
+                alt="모션업 메인 이미지"
+              />
+            </div>
+            <!-- info -->
+            <div class="content__grid content__grid--info">
+              <div class="content__grid-text">
+                <h3 class="neon-01 fs-40 fw-900 ff-pre">모션업 (WEB)</h3>
+                <p class="neon-01 fs-28 fw-600 ff-pre">
+                  (2025/07/08 ~ 2025/12/01)
+                </p>
+                <p class="content__grid-desc fs-28 fw-600 ff-pre">
+                  비대면 수영 강좌 플랫폼 웹
+                </p>
+              </div>
+            </div>
+            <!-- etc -->
+            <div class="content__grid content__grid--etc">
+              <div class="content__grid-dl">
+                <dl class="content__grid-item">
+                  <dt class="content__grid-dt neon-01 fs-28 fw-600 ff-pre">
+                    · 담당 업무
+                  </dt>
+                  <dt class="content__grid-dd fs-26 fw-600 ff-pre">
+                    웹디자인, 퍼블리싱
+                  </dt>
+                </dl>
+                <dl class="content__grid-item">
+                  <dt class="content__grid-dt neon-01 fs-28 fw-600 ff-pre">
+                    · 주요 구현
+                  </dt>
+                  <dt class="content__grid-dd fs-26 fw-600 ff-pre">
+                    사용자 웹 디자인 44개
+                  </dt>
+                </dl>
+                <dl class="content__grid-item">
+                  <dt class="content__grid-dt neon-01 fs-28 fw-600 ff-pre">
+                    · 참여도
+                  </dt>
+                  <dt class="content__grid-dd fs-26 fw-600 ff-pre">
+                    디자인 100%, 퍼블리싱 100%
+                  </dt>
+                </dl>
+                <dl class="content__grid-item">
+                  <dt class="content__grid-dt neon-01 fs-28 fw-600 ff-pre">
+                    · 기술 스택
+                  </dt>
+                  <dt class="content__grid-dd fs-26 fw-600 ff-pre">
+                    html, scss, css, js, Jquery
+                  </dt>
+                </dl>
+                <dl class="content__grid-item">
+                  <dt class="content__grid-dt neon-01 fs-28 fw-600 ff-pre">
+                    · 디자인 툴
+                  </dt>
+                  <dt class="content__grid-dd fs-26 fw-600 ff-pre">Figma</dt>
+                </dl>
+              </div>
+            </div>
+            <div class="content__grid content__grid--comment">
+              <div class="content__grid-text">
+                <span class="gray-01 fs-40 fw-700 ff-pre">/* Comment */</span>
+                <p class="content__grid-comment ff-pre fs-28 fw-500">
+                  비대면 환경에서 수영 강좌를 진행할 수 있는 웹 기반 플랫폼 구축
+                  프로젝트입니다. 서비스 특성에 맞춰 일반 사용자와 강사라는
+                  두가지 타겟 유저 환경을 구분하여 설계되었습니다. <br /><br />
+                  모바일 해상도를 기준으로 UI/UX 디자인과 웹 퍼블리싱을 전담하여
+                  진행했습니다. 사용자가 강사를 탐색한 후 수영 피드백까지 이어서
+                  이용할 수 있도록 서비스 이용 흐름을 구성했습니다. 강사
+                  페이지도 수강생 질문 관리가 모바일에서도 편리하게 가능하도록
+                  편의성에 초점을 맞춰 작업했습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Customer APP DESIGN 섹션 -->
+        <section class="content content--projectApp content--projectSlide">
+          <header class="content__header">
+            <h2 class="content__header-title fs-40 ff-pre">
+              사용자 - 모바일 웹디자인 화면
+            </h2>
+            <div class="swiper-button-group">
+              <div class="swiper-button-prev fw-700 fs-32">PREV</div>
+              <div class="swiper-button-next fw-700 fs-32">NEXT</div>
+            </div>
+          </header>
+          <div class="content__body content__body--projectSlide">
+            <div class="swiper js-projectApp-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./img/port-folio__motionup-cust-mobile-01.png"
+                    alt="모션업 사용자 웹 스크린샷01"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/port-folio__motionup-cust-mobile-02.png"
+                    alt="모션업 사용자 웹 스크린샷02"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Coach Web DESIGN 섹션 -->
+        <section class="content content--projectWeb content--projectSlide">
+          <header class="content__header">
+            <h2 class="content__header-title fs-40 ff-pre">
+              코치 - 모바일 웹디자인 화면
+            </h2>
+            <div class="swiper-button-group">
+              <div class="swiper-button-prev fw-700 fs-32">PREV</div>
+              <div class="swiper-button-next fw-700 fs-32">NEXT</div>
+            </div>
+          </header>
+          <div class="content__body content__body--projectSlide">
+            <div class="swiper js-projectWeb-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./img/port-folio__motionup-coach-mobile-01.png"
+                    alt="모션업 사용자 웹 스크린샷01"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./img/port-folio__motionup-coach-mobile-02.png"
+                    alt="모션업 사용자 웹 스크린샷02"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- <div class="footer-container">
+      <footer class="footer-wrap">
+        아직 만들지 않음
+      </footer>
+    </div> -->
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-action.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

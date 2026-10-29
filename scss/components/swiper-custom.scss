@@ -1,0 +1,19 @@
+.swiper-button-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  .swiper-button-prev ,
+  .swiper-button-next {
+    color: white;
+    position: static;
+    inset: auto;
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding: 10px 30px;
+    border: 1px solid white;
+  }
+  .swiper-navigation-icon {
+    display: none;
+  }
+}

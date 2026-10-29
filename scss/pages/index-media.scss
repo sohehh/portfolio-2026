@@ -1,0 +1,119 @@
+// 일반 데스크탑, 노트북
+@media all and (max-width: 1440px) {
+}
+//아이패드, 갤럭시 탭
+@media all and (max-width: 1024px) {
+  .content {
+    max-width: none;
+    width: calc(100% - 60px);
+  }
+  .content__body--about {
+    grid-template-areas:
+      "info"
+      "skill"
+      "career"
+      "qualification"
+      "education";
+    grid-template-columns: 1fr;
+    .content__grid--info {
+      border-right: 0;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+    .content__grid--career {
+      .content__grid-date {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+    .content__grid--education {
+      .content__grid-date {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+  }
+}
+//모든 스마트폰
+// 260515 추가
+@media all and (max-width: 768px) {
+  .main-container {
+    gap: 100px;
+  }
+  .content {
+    width: calc(100% - 30px);
+  }
+  .content__header {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .content__body--about {
+    .content__grid--skill {
+      .content__grid-list {
+        padding-left: 23px;
+      }
+    }
+
+    .content__grid--career {
+      .content__grid-date {
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+        row-gap: 5px;
+      }
+    }
+    .content__grid--education {
+      .content__grid-date {
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+        row-gap: 5px;
+        p {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .content__header--featured {
+    align-items: center;
+  }
+  .featured {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__card {
+      display: grid;
+      grid-template-columns: minmax(200px, 0.7fr) 1fr;
+      column-gap: 24px;
+    }
+    &__card img {
+      grid-row: span 3;
+      height: 100%;
+    }
+    &__number {
+      margin-top: 0;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .content__header--featured {
+    gap: 0;
+  }
+  .featured {
+    &__intro {
+      padding-bottom: 0;
+      max-width: none;
+      align-self: center;
+    }
+    &__card {
+      display: flex;
+      padding: 15px;
+    }
+    &__card img {
+      aspect-ratio: 1.4 / 1;
+      height: auto;
+    }
+    &__number {
+      margin-top: 18px;
+    }
+  }
+}

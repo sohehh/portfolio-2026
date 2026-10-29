@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한소희 포트폴리오</title>
+    <link rel="stylesheet" href="./css/basic/reset.css" />
+    <link rel="stylesheet" href="./css/basic/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/basic/typography.css" />
+    <link rel="stylesheet" href="./css/basic/common.css" />
+    <link rel="stylesheet" href="./css/components/swiper-custom.css" />
+    <link rel="stylesheet" href="./css/components/site-nav.css" />
+    <link rel="stylesheet" href="./css/pages/index.css" />
+    <link rel="stylesheet" href="./css/pages/index-media.css" />
+  </head>
+  <script defer src="./js/loading.js"></script>
+  <body>
+    <div class="wrap">
+      <!-- 로딩 스크립트 -->
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+      </div>
+      <header class="site-header">
+        <a class="site-header__logo gra-neon fs-15 fw-900" href="./index.html">
+          &lt; SOHEE /&gt;
+        </a>
+
+        <button
+          class="site-header__toggle"
+          type="button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="#about">ABOUT</a></li>
+            <li><a class="site-nav__link" href="#featured">FEATURED</a></li>
+            <li><a class="site-nav__link" href="#projects">PROJECTS</a></li>
+            <li>
+              <a class="site-nav__link" href="./publishing-cases.html">
+                PUBLISHING
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-container">
+        <!-- 메인 히어로 섹션 -->
+        <section class="hero">
+          <div class="hero__txt">
+            <h2 class="gra-neon fs-13vw fw-900">< SOHEE /></h2>
+            <span class="fw-600 gray-01 fs-4vw"
+              >/* UI/UX Web Design · Publishing */</span
+            >
+          </div>
+          <div class="hero__info">
+            <!-- 포트폴리오 영역으로 스크롤 이동 -->
+            <a href="#featured" class="fs-40 fw-500">Project</a>
+            <a href="./publishing-cases.html" class="fs-40 fw-500"
+              >Publishing</a
+            >
+          </div>
+        </section>
+        <!-- ABOUT ME 섹션 -->
+        <section id="about" class="content content--about">
+          <header class="content__header">
+            <h2 class="content__header-title gra-neon fs-72">< About Me /></h2>
+          </header>
+          <div class="content__body content__body--about">
+            <!-- info -->
+            <div class="content__grid content__grid--info">
+              <img
+                class="content__grid-img"
+                src="./img/sohee-profile.png"
+                alt="한소희 증명사진"
+              />
+              <div class="content__grid-text">
+                <span class="gray-01 fs-40 fw-700 ff-pre">/* Info */</span>
+                <h3 class="neon-01 fs-40 fw-600 ff-pre">한소희 (1999/03/04)</h3>
+                <span class="ff-pre fs-32 fw-500"
+                  >UI/UX Design · Publishing</span
+                >
+              </div>
+            </div>
+            <!-- skill -->
+            <div class="content__grid content__grid--skill">
+              <div class="content__grid-text">
+                <span class="gray-01 fs-40 fw-700 ff-pre">/* Skill */</span>
+                <ol class="content__grid-list">
+                  <li class="content__grid-item fs-28">UI/UX 웹 · 앱 디자인</li>
+                  <li class="content__grid-item fs-28">
+                    HTML5/CSS3/SCSS 기반 웹 UI 마크업 구현 및 퍼블리싱
+                  </li>
+                  <li class="content__grid-item fs-28">
+                    jQuery 기반 인터랙션 구현
+                  </li>
+                  <li class="content__grid-item fs-28">반응형 대응</li>
+                </ol>
+              </div>
+            </div>
+            <!-- career -->
+            <div class="content__grid content__grid--career">
+              <span class="gray-01 fs-40 fw-700 ff-pre">/* Career */</span>
+              <div class="content__grid-date">
+                <span class="fs-28 fw-500"
+                  >2023 / 02 / 08 ~ 2026 / 02 / 28
+                </span>
+                <p class="neon-01 fs-28 fw-600">
+                  주식회사 플렉시즈 - UI/UX 디자인 및 퍼블리싱
+                </p>
+              </div>
+            </div>
+            <!-- qualification -->
+            <div class="content__grid content__grid--qualification">
+              <span class="gray-01 fs-40 fw-700 ff-pre"
+                >/* Qualification */</span
+              >
+              <div class="content__grid-date">
+                <!-- 01 -->
+                <span class="fs-28 fw-500">2023 / 07 / 05 </span>
+                <p class="neon-01 fs-28 fw-600">웹디자인개발기능사 취득</p>
+              </div>
+            </div>
+            <!-- education -->
+            <div class="content__grid content__grid--education">
+              <span class="gray-01 fs-40 fw-700 ff-pre">/* Education */</span>
+              <div class="content__grid-date">
+                <!-- 01 -->
+                <span class="fs-28 fw-500"
+                  >2022 / 03 / 23 ~ 2022 / 07 / 29
+                </span>
+                <p class="neon-01 fs-28 fw-600">
+                  [디지털 디자인] 스마트-UI/UX 반응형 웹디자인/웹퍼블리셔
+                  (디자인&코딩) 양성 A
+                </p>
+                <!-- 02 -->
+                <span class="fs-28 fw-500"
+                  >2021 / 06 / 15 ~ 2021 / 07 / 27</span
+                >
+                <p class="neon-01 fs-28 fw-600">
+                  포토샵(Photoshop CS5) 향상과정
+                </p>
+                <!-- 03 -->
+                <span class="fs-28 fw-500"
+                  >2021 / 10 / 20 ~ 2021 / 12 / 01</span
+                >
+                <p class="neon-01 fs-28 fw-600">
+                  사무자동화 엑셀(2016)프로그램 활용
+                </p>
+                <!-- 04 -->
+                <span class="fs-28 fw-500"
+                  >2018 / 02 / 28 ~ 2021 / 02 / 16
+                </span>
+                <p class="neon-01 fs-28 fw-600">
+                  대림대학교 - 컴퓨터소프트웨어전공
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FEATURED PROJECTS 섹션 -->
+        <section id="featured" class="content content--featured">
+          <header class="content__header content__header--featured">
+            <h2 class="content__header-title gra-neon fs-72">
+              &lt; 대표 프로젝트 /&gt;
+            </h2>
+            <p class="featured__intro fs-26 fw-500 ff-pre white-01">
+              GLOBAL WEB / APP / SYSTEM UI를 대표하는 프로젝트입니다.
+            </p>
+          </header>
+          <div class="featured__grid">
+            <a class="featured__card" href="./project-mdem.html">
+              <img
+                src="./img/port-folio__mdem-thumb.png"
+                alt="메종드엠 의원 글로벌 서비스 화면"
+              />
+              <span class="featured__number fs-24 fw-700 ff-pre"
+                >01 / GLOBAL WEB</span
+              >
+              <h3 class="fs-40 fw-800">메종드엠 의원</h3>
+              <p class="fs-24 fw-500">
+                4개 국가를 고려한 반응형 예약·콘텐츠 플랫폼
+              </p>
+            </a>
+            <a class="featured__card" href="./project-righthand.html">
+              <img
+                src="./img/port-folio__righthand-thumb.png"
+                alt="오른손 서비스 화면"
+              />
+              <span class="featured__number fs-24 fw-700 ff-pre"
+                >02 / APP · WEB</span
+              >
+              <h3 class="fs-40 fw-800">오른손</h3>
+              <p class="fs-24 fw-500">
+                요양 신청 흐름을 위한 모바일·웹 서비스 UI
+              </p>
+            </a>
+            <a class="featured__card" href="./project-energy.html">
+              <img
+                src="./img/port-folio__energy-thumb.png"
+                alt="에너지공단 시스템 화면"
+              />
+              <span class="featured__number fs-24 fw-700 ff-pre"
+                >03 / SYSTEM UI</span
+              >
+              <h3 class="fs-40 fw-800">에너지공단</h3>
+              <p class="fs-24 fw-500">
+                정보 구조와 가독성을 고려한 시스템 문의 화면
+              </p>
+            </a>
+          </div>
+        </section>
+        <!-- PROJECT 섹션 -->
+        <section id="projects" class="content content--project">
+          <header class="content__header">
+            <h2 class="content__header-title gra-neon fs-72">
+              &lt; 서비스 프로젝트 /&gt;
+            </h2>
+            <div class="swiper-button-group">
+              <div class="swiper-button-prev fw-700 fs-32">PREV</div>
+              <div class="swiper-button-next fw-700 fs-32">NEXT</div>
+            </div>
+          </header>
+          <div class="content__body content__body--project">
+            <div class="swiper js-project-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="./project-mdem.html">
+                    <h3 class="swiper-port-name fs-40 fw-800">
+                      메종드엠 의원 (Global)
+                    </h3>
+                    <figure>
+                      <figcaption class="sr-only">메종드엠 의원</figcaption>
+                      <img
+                        class="swiper-img"
+                        src="./img/port-folio__mdem-thumb.png"
+                        alt="메종드엠 의원"
+                      />
+                      <div class="swiper-text">
+                        <span class="swiper-text__appWeb fs-40 fw-900"
+                          >WEB</span
+                        >
+                        <p class="swiper-text__info fs-28 fw-700">
+                          글로벌 시술 예약 시스템 및 웹 콘텐츠 페이지 구축
+                        </p>
+                      </div>
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./project-id.html">
+                    <h3 class="swiper-port-name fs-40 fw-800">
+                      아이디병원 (Global)
+                    </h3>
+                    <figure>
+                      <figcaption class="sr-only">아이디 병원</figcaption>
+                      <img
+                        class="swiper-img"
+                        src="./img/port-folio__id-thumb.png"
+                        alt="아이디병원"
+                      />
+                      <div class="swiper-text">
+                        <span class="swiper-text__appWeb fs-40 fw-900"
+                          >WEB</span
+                        >
+                        <p class="swiper-text__info fs-28 fw-700">
+                          글로벌 시술 예약 시스템 및 웹 콘텐츠 페이지 구축
+                        </p>
+                      </div>
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./project-motionup.html">
+                    <h3 class="swiper-port-name fs-40 fw-800">모션업</h3>
+                    <figure>
+                      <figcaption class="sr-only">모션업</figcaption>
+                      <img
+                        class="swiper-img"
+                        src="./img/port-folio__motionup-thumb.png"
+                        alt="모션업"
+                      />
+                      <div class="swiper-text">
+                        <span class="swiper-text__appWeb fs-40 fw-900"
+                          >WEB</span
+                        >
+                        <p class="swiper-text__info fs-28 fw-700">
+                          비대면 수영 강좌 플랫폼 웹
+                        </p>
+                      </div>
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./project-righthand.html">
+                    <h3 class="swiper-port-name fs-40 fw-800">오른손</h3>
+                    <figure>
+                      <figcaption class="sr-only">오른손</figcaption>
+                      <img
+                        class="swiper-img"
+                        src="./img/port-folio__righthand-thumb.png"
+                        alt="오른손"
+                      />
+                      <div class="swiper-text">
+                        <span class="swiper-text__appWeb fs-40 fw-900"
+                          >APP, WEB</span
+                        >
+                        <p class="swiper-text__info fs-28 fw-700">
+                          요양병원매칭, 요양신청서 대리 접수 플랫폼
+                        </p>
+                      </div>
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./project-carehospi.html">
+                    <h3 class="swiper-port-name fs-40 fw-800">
+                      CARE HOSPI (Global)
+                    </h3>
+                    <figure>
+                      <figcaption class="sr-only">CARE HOSPI</figcaption>
+                      <img
+                        class="swiper-img"
+                        src="./img/port-folio__carehospi-thumb.png"
+                        alt="CARE HOSPI"
+                      />
+                      <div class="swiper-text">
+                        <span class="swiper-text__appWeb fs-40 fw-900"
+                          >WEB</span
+                        >
+                        <p class="swiper-text__info fs-28 fw-700">
+                          외국인 성형관광 사후관리 플랫폼
+                        </p>
+                      </div>
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./project-blingtalk.html">
+                    <h3 class="swiper-port-name fs-40 fw-800">블링톡</h3>
+                    <figure>
+                      <figcaption class="sr-only">블링톡</figcaption>
+                      <img
+                        class="swiper-img"
+                        src="./img/port-folio__blingtalk-thumb.png"
+                        alt="블링톡"
+                      />
+                      <div class="swiper-text">
+                        <span class="swiper-text__appWeb fs-40 fw-900"
+                          >APP, WEB</span
+                        >
+                        <p class="swiper-text__info fs-28 fw-700">
+                          피부과·성형외과 예약 및 커뮤니티 플랫폼
+                        </p>
+                      </div>
+                    </figure>
+                  </a>
+                </div>
+                <!-- <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PROJECT 섹션 -->
+        <section class="content content--project--row">
+          <header class="content__header">
+            <h2 class="content__header-title gra-neon fs-72">
+              &lt; 시스템 구축 프로젝트 /&gt;
+            </h2>
+            <div class="swiper-button-group">
+              <div class="swiper-button-prev fw-700 fs-32">PREV</div>
+              <div class="swiper-button-next fw-700 fs-32">NEXT</div>
+            </div>
+          </header>
+          <div class="content__body content__body--project">
+            <div class="swiper js-project-swiper--row">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="./project-energy.html">
+                    <h3 class="swiper-port-name fs-40 fw-800">에너지공단</h3>
+                    <figure>
+                      <figcaption class="sr-only">에너지공단</figcaption>
+                      <img
+                        class="swiper-img"
+                        src="./img/port-folio__energy-thumb.png"
+                        alt="에너지공단"
+                      />
+                      <div class="swiper-text">
+                        <span class="swiper-text__appWeb fs-40 fw-900"
+                          >WEB</span
+                        >
+                        <p class="swiper-text__info fs-28 fw-700">
+                          시스템 문의 게시판 구축
+                        </p>
+                      </div>
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./project-komipo.html">
+                    <h3 class="swiper-port-name fs-40 fw-800">중부발전</h3>
+                    <figure>
+                      <figcaption class="sr-only">중부발전</figcaption>
+                      <img
+                        class="swiper-img"
+                        src="./img/port-folio__komipo-thumb.png"
+                        alt="중부발전"
+                      />
+                      <div class="swiper-text">
+                        <span class="swiper-text__appWeb fs-40 fw-900"
+                          >WEB</span
+                        >
+                        <p class="swiper-text__info fs-28 fw-700">
+                          신재생에너지 태양광 풍력 발전량 예측 페이지 구축
+                        </p>
+                      </div>
+                    </figure>
+                  </a>
+                </div>
+                <!-- <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- <div class="footer-container">
+      <footer class="footer-wrap">
+        아직 만들지 않음
+      </footer>
+    </div> -->
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-action.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

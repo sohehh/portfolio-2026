@@ -1,0 +1,150 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 24px;
+  min-height: 66px;
+  padding: 0 4vw;
+  background: rgba(10, 10, 10, 0.92);
+  border-bottom: 1px solid var(--border-white-01);
+  backdrop-filter: blur(12px);
+}
+.site-header__logo {
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.site-header__toggle {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 5px 2px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.site-header__toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--white-01);
+  -webkit-transition: opacity 0.25s ease, -webkit-transform 0.25s ease;
+  transition: opacity 0.25s ease, -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition: transform 0.25s ease, opacity 0.25s ease, -webkit-transform 0.25s ease;
+}
+.site-header__toggle[aria-expanded=true] span:nth-child(1) {
+  -webkit-transform: translateY(7px) rotate(45deg);
+          transform: translateY(7px) rotate(45deg);
+}
+.site-header__toggle[aria-expanded=true] span:nth-child(2) {
+  opacity: 0;
+}
+.site-header__toggle[aria-expanded=true] span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
+}
+
+.site-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: clamp(16px, 2vw, 36px);
+}
+.site-nav__link {
+  color: var(--gray-01);
+  font-family: "Pretendard", sans-serif;
+  font-size: clamp(12px, 0.95vw, 15px);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.site-nav__link:hover, .site-nav__link:focus-visible, .site-nav__link[aria-current=page] {
+  color: var(--white-01);
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    min-height: 58px;
+    padding: 0 15px;
+    gap: 14px;
+  }
+  .site-header__toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    z-index: 22;
+  }
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    background: rgba(10, 10, 10, 0.97);
+    border-bottom: 1px solid var(--border-white-01);
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-transition: grid-template-rows 0.25s ease, opacity 0.25s ease, visibility 0.25s ease, padding 0.25s ease;
+    transition: grid-template-rows 0.25s ease, opacity 0.25s ease, visibility 0.25s ease, padding 0.25s ease;
+    transition: grid-template-rows 0.25s ease, opacity 0.25s ease, visibility 0.25s ease, padding 0.25s ease, -ms-grid-rows 0.25s ease;
+  }
+  .site-nav__list {
+    min-height: 0;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    gap: 0;
+  }
+  .site-nav__link {
+    display: block;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+  .site-header.is-menu-open .site-nav {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header__toggle span,
+  .site-nav {
+    -webkit-transition: none;
+    transition: none;
+  }
+}/*# sourceMappingURL=site-nav.css.map */

@@ -1,0 +1,23 @@
+.swiper-button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.swiper-button-group .swiper-button-prev,
+.swiper-button-group .swiper-button-next {
+  color: white;
+  position: static;
+  inset: auto;
+  margin: auto;
+  width: auto;
+  height: auto;
+  padding: 10px 30px;
+  border: 1px solid white;
+}
+.swiper-button-group .swiper-navigation-icon {
+  display: none;
+}/*# sourceMappingURL=swiper-custom.css.map */
