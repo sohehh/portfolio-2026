@@ -24,7 +24,7 @@
 .case-card__label, .case-card__body {
   padding: clamp(28px, 3.4vw, 52px);
 }
-.case-card__gif {
+.case-card__video {
   width: 100%;
   padding-top: 15px;
 }

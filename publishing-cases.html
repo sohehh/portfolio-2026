@@ -97,13 +97,14 @@
                 PC사이즈 GNB 카테고리 메뉴 UI 및 스크롤 스타일 구현
               </h2>
               <video
-                class="case-card__gif"
+                class="case-card__video"
                 src="./video/아이디병원피씨네비게이션.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
                 preload="auto"
+                aria-label="아이디병원 피씨 카테고리 메뉴 동작 영상"
               ></video>
               <ul class="case-card__desc fs-24 fw-500">
                 <li>SCSS를 활용한 다단계 카테고리 메뉴 레이아웃 구성</li>
@@ -111,10 +112,6 @@
                   jQuery mouseenter 이벤트와 클래스 제어를 통한 하위 메뉴 표시
                 </li>
                 <li>카테고리별 활성·호버 상태 스타일링</li>
-                <li>
-                  대메뉴·중메뉴 콘텐츠 높이에 따른 드롭다운 영역 동적 조절
-                </li>
-                <li>메뉴 영역의 최대 높이 제한</li>
                 <li>overscroll-behavior 및 커스텀 스크롤바 스타일 적용</li>
               </ul>
               <ul class="case-card__list fs-20 fw-500">
@@ -123,8 +120,8 @@
                   요소의 길이는 유동적으로 늘어나고 줄어들게끔 구현
                 </li>
                 <li>
-                  <strong>문제상황</strong>대메뉴에 hover시 중메뉴가 내부
-                  스크롤에 가려져 보이지 않는 문제 발생
+                  <strong>문제상황</strong>CSS로만 구현시 대메뉴에 hover했을 때
+                  중메뉴가 내부 스크롤에 가려져 보이지 않는 문제 발생
                 </li>
                 <li>
                   <strong>해결방안</strong>대메뉴에 mouseenter 이벤트를 할당하여
@@ -156,38 +153,36 @@
                 모바일 사이즈 GNB 카테고리 메뉴 UI 및 스크롤 스타일 구현
               </h2>
               <video
-                class="case-card__gif"
+                class="case-card__video"
                 src="./video/아이디병원모바일네비게이션.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
                 preload="metadata"
+                aria-label="아이디병원 모바일 카테고리 메뉴 동작 영상"
               ></video>
               <ul class="case-card__desc fs-24 fw-500">
-                <li>
-                  jQuery 이벤트를 활용한 카테고리 레이어 열기·닫기 및 상태 제어
-                </li>
                 <li>스크롤 위치에 따른 대메뉴 활성 상태 동기화</li>
-                <li>
-                  대메뉴 클릭 시 해당되는 중메뉴가 상단으로 스크롤 이동 구현
-                </li>
+                <li>대메뉴 클릭 시 해당 중메뉴가 상단으로 스크롤되도록 구현</li>
+                <li>활성 대메뉴가 항상 보이도록 대메뉴 목록 스크롤 처리</li>
               </ul>
               <ul class="case-card__list fs-20 fw-500">
                 <li>
-                  <strong>요구사항</strong>대메뉴 터치시 우측에 매칭된 중메뉴가
-                  상단에 스크롤되도록 구현, 우측에 뿌려진 중메뉴의 위치에 따라
-                  왼쪽 대메뉴의 상태가 활성화 되게 구현
+                  <strong>요구사항</strong>대메뉴를 터치하면 매칭되는 중메뉴가
+                  상단으로 스크롤되고, 중메뉴 영역을 스크롤하면 현재 위치에 맞는
+                  대메뉴가 활성화되도록 구현
                 </li>
                 <li>
-                  <strong>문제상황</strong>어느 요소를 기준으로 매칭되는 요소를
-                  찾아 활성화하거나 스크롤할지 판단하는 부분이 어려움
+                  <strong>문제상황</strong>스크롤 컨테이너 안에서 현재 보이는
+                  중메뉴를 판단하고, 이를 대메뉴와 어떻게 매칭할지 정하는 부분이
+                  어려웠음
                 </li>
                 <li>
-                  <strong>해결방안</strong>offset()을 활용해 각 콘텐츠의 상단
-                  위치를 계산하고, 스크롤 컨테이너 상단과의 거리(30px)를
-                  기준으로 현재 카테고리를 판별해 해당 1depth 메뉴를
-                  활성화하도록 구현
+                  <strong>해결방안</strong>offset()으로 각 중메뉴의 상단 위치를
+                  계산하고, 스크롤 컨테이너 상단과의 거리(30px)를 기준으로 현재
+                  중메뉴를 판별해 대응하는 대메뉴를 활성화. 대메뉴 클릭 시에는
+                  앞선 중메뉴들의 높이를 누적 계산해 해당 위치로 animate 스크롤
                 </li>
               </ul>
               <a class="case-card__link fs-22 fw-700" href="./project-id.html"
@@ -215,31 +210,34 @@
                 하나의 페이지에 최적화된 반응형 레이아웃 구현
               </h2>
               <video
-                class="case-card__gif"
+                class="case-card__video"
                 src="./video/메종드엠반응형.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
                 preload="metadata"
+                aria-label="메종드엠 예약페이지 반응형 영상"
               ></video>
               <video
-                class="case-card__gif"
+                class="case-card__video"
                 src="./video/메종드엠반응형2.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
                 preload="metadata"
+                aria-label="메종드엠 블로그 목록 페이지 반응형 영상"
               ></video>
               <video
-                class="case-card__gif"
+                class="case-card__video"
                 src="./video/메종드엠반응형3.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
                 preload="metadata"
+                aria-label="메종드엠 블로그 상세페이지 반응형 영상"
               ></video>
               <ul class="case-card__desc fs-24 fw-500">
                 <li>미디어 쿼리를 활용한 디바이스별 레이아웃 구성</li>
@@ -268,13 +266,14 @@
                 부드러운 애니메이션으로 동작하는 모달 구현
               </h2>
               <video
-                class="case-card__gif"
+                class="case-card__video"
                 src="./video/오른손모달.mp4"
                 autoplay
                 muted
                 loop
                 playsinline
                 preload="metadata"
+                aria-label="오른손 웹뷰 모달 인터렉션 영상"
               ></video>
               <ul class="case-card__desc fs-24 fw-500">
                 <li>fadeIn과 animate 메서드를 활용해 액션 구현</li>
