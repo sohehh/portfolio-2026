@@ -25,6 +25,10 @@
     width: 100%;
     padding-top: 15px;
   }
+  &__img {
+    width: 100%;
+    padding-top: 15px;
+  }
   &__desc {
     padding-top: 15px;
     list-style: disc;
@@ -71,6 +75,53 @@
     border-bottom: 1px solid currentColor;
   }
 }
+.content {
+  &--case {
+    .case-card__body {
+      > h2 {
+        scroll-margin-top: 100px;
+      }
+    }
+  }
+}
+
+.case-nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 40px 0 80px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-white-01);
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-height: 86px;
+    padding: 16px;
+    color: var(--white-01);
+    text-decoration: none;
+    background: rgba(#fff, 0.04);
+    border: 1px solid var(--border-white-01);
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: #111;
+      background-color: var(--neon-01);
+      border-color: var(--neon-01);
+      outline: none;
+
+      .case-nav__case {
+        color: #111;
+      }
+    }
+  }
+}
+
 @media all and (max-width: 768px) {
   .case-card {
     grid-template-columns: 1fr;
@@ -81,6 +132,29 @@
     &__list {
       grid-template-columns: 1fr;
       gap: 14px;
+    }
+  }
+  .case-intro {
+    text-align: center;
+  }
+
+  .content {
+    &--case {
+      .case-card__body {
+        > h2 {
+          scroll-margin-top: 80px;
+        }
+      }
+    }
+  }
+
+  .case-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 56px;
+
+    &__link {
+      min-height: 74px;
+      padding: 14px;
     }
   }
 }

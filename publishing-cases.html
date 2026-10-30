@@ -73,10 +73,67 @@
               </h1>
             </div>
           </header>
-          <p class="case-intro fs-28 fw-500 ff-pre">
+          <h2 class="case-intro fs-28 fw-500 ff-pre">
             다양한 프로젝트에서 구현한 인터랙션, 반응형 작업의 결과물을
             소개합니다.
-          </p>
+          </h2>
+          <nav class="case-nav" aria-label="퍼블리싱 케이스 바로가기">
+            <a
+              class="case-nav__link ff-pre fs-20 fw-700"
+              href="#case-mouse-title"
+            >
+              <span class="case-nav__case neon-01 fs-15 fw-700">CASE 01</span>
+              PC GNB 메뉴
+            </a>
+
+            <a
+              class="case-nav__link ff-pre fs-20 fw-700"
+              href="#case-click-title"
+            >
+              <span class="case-nav__case neon-01 fs-15 fw-700">CASE 02</span>
+              모바일 GNB 메뉴
+            </a>
+
+            <a
+              class="case-nav__link ff-pre fs-20 fw-700"
+              href="#case-button-title"
+            >
+              <span class="case-nav__case neon-01 fs-15 fw-700">CASE 03</span>
+              Datepicker 태그 개선
+            </a>
+
+            <a
+              class="case-nav__link ff-pre fs-20 fw-700"
+              href="#case-responsive-title"
+            >
+              <span class="case-nav__case neon-01 fs-15 fw-700">CASE 04</span>
+              반응형 웹 퍼블리싱
+            </a>
+
+            <a
+              class="case-nav__link ff-pre fs-20 fw-700"
+              href="#case-picture-title"
+            >
+              <span class="case-nav__case neon-01 fs-15 fw-700">CASE 05</span>
+              이미지 로딩 최적화
+            </a>
+
+            <a
+              class="case-nav__link ff-pre fs-20 fw-700"
+              href="#case-modal-title"
+            >
+              <span class="case-nav__case neon-01 fs-15 fw-700">CASE 06</span>
+              모달 인터랙션
+            </a>
+
+            <a
+              class="case-nav__link ff-pre fs-20 fw-700"
+              href="#case-fragment-title"
+            >
+              <span class="case-nav__case neon-01 fs-15 fw-700">CASE 07</span>
+              마크업 구조 설계
+            </a>
+          </nav>
         </section>
 
         <section
@@ -194,12 +251,71 @@
 
         <section
           class="content content--case"
-          aria-labelledby="case-responsive-title"
+          aria-labelledby="case-button-title"
         >
           <article class="case-card">
             <div class="case-card__label">
               <span class="case-card__eyebrow fs-24 fw-700 ff-pre"
                 >CASE 03</span
+              >
+              <p class="neon-01 fs-28 fw-700 ff-pre">
+                jQuery-UI.js의 코드를 분석하여 문제 해결
+              </p>
+            </div>
+            <div class="case-card__body">
+              <h2 id="case-button-title" class="fs-40 fw-800">
+                jQuery UI Datepicker의 a 태그를 button변경하여 SEO/접근성 이슈
+                개선
+              </h2>
+              <img
+                class="case-card__img"
+                src="./img/아이디병원button태그.png"
+                alt="Dom으로 뿌려지는 button태그"
+              />
+              <img
+                class="case-card__img"
+                src="./img/아이디병원-제이쿼리button태그.png"
+                alt="제이쿼리UI코드내에 a태그를 button태그로 개선"
+              />
+              <ul class="case-card__desc fs-24 fw-500">
+                <li>jQuery UI Datepicker 월 이동 버튼 마크업 개선</li>
+                <li>기능 목적에 맞는 시맨틱 태그 적용</li>
+                <li>기존 월 이동 동작을 유지한 접근성·SEO 개선</li>
+              </ul>
+              <ul class="case-card__list fs-20 fw-500">
+                <li>
+                  <strong>요구사항</strong>SEO·접근성 평가 과정에서 지적된
+                  Datepicker 월 이동 요소의 마크업을 기능 목적에 맞게 개선
+                </li>
+                <li>
+                  <strong>문제상황</strong>페이지 이동 기능이 없는 월 이전·다음
+                  요소가 <code>a</code> 태그로 생성되고 있었으며 해당 요소는
+                  jQuery UI 내부에서 동적으로 만들어지는 구조여서, 화면 마크업만
+                  수정해서는 해결할 수 없었음.
+                </li>
+                <li>
+                  <strong>해결방안</strong>jQuery UI 라이브러리 파일에서
+                  Datepicker 요소를 생성하는 코드를 분석, 월 이동 요소의
+                  <code>a</code> 태그를 <code>button</code>으로 변경하고, 기존
+                  클래스와 이벤트 동작은 유지하도록 수정 이를 통해 기능 목적에
+                  맞는 시맨틱 마크업으로 개선.
+                </li>
+              </ul>
+              <a class="case-card__link fs-22 fw-700" href="./project-id.html"
+                >아이디병원 프로젝트 보기</a
+              >
+            </div>
+          </article>
+        </section>
+
+        <section
+          class="content content--case"
+          aria-labelledby="case-responsive-title"
+        >
+          <article class="case-card">
+            <div class="case-card__label">
+              <span class="case-card__eyebrow fs-24 fw-700 ff-pre"
+                >CASE 04</span
               >
               <p class="neon-01 fs-28 fw-700 ff-pre">
                 PC · Tablet · Mobile 반응형 웹 퍼블리싱
@@ -252,12 +368,60 @@
         </section>
         <section
           class="content content--case"
+          aria-labelledby="case-picture-title"
+        >
+          <article class="case-card">
+            <div class="case-card__label">
+              <span class="case-card__eyebrow fs-24 fw-700 ff-pre"
+                >CASE 05</span
+              >
+              <p class="neon-01 fs-28 fw-700 ff-pre">
+                Picture · Source 기반 반응형 이미지 로딩 최적화
+              </p>
+            </div>
+            <div class="case-card__body">
+              <h2 id="case-picture-title" class="fs-40 fw-800">
+                디바이스별 이미지 분리를 통한 메인 배너 로딩 개선
+              </h2>
+              <img
+                class="case-card__img"
+                src="./img/메종드엠picture태그.png"
+                alt="picture와 source태그 적용"
+              />
+              <ul class="case-card__desc fs-24 fw-500">
+                <li>PC · 모바일 배너 이미지 분리 로드</li>
+                <li>화면 크기별 최적 이미지 선택</li>
+                <li>불필요한 고용량 이미지 요청 제거</li>
+              </ul>
+              <ul class="case-card__list fs-20 fw-500">
+                <li>
+                  <strong>요구사항</strong>PC·모바일 환경에 맞는 메인 배너
+                  이미지 노출 및 초기 로딩 개선
+                </li>
+                <li>
+                  <strong>문제상황</strong>PC·모바일 이미지를 모두 불러온 뒤
+                  CSS로 숨겨, 모바일에서도 고용량 PC 이미지가 함께 다운로드되는
+                  문제 발생
+                </li>
+                <li>
+                  <strong>해결방안</strong>picture와 source media 태그를 적용해
+                  화면 크기에 맞는 이미지만 선택적으로 로드하도록 구현
+                </li>
+              </ul>
+              <a class="case-card__link fs-22 fw-700" href="./project-mdem.html"
+                >메종드엠 프로젝트 보기</a
+              >
+            </div>
+          </article>
+        </section>
+        <section
+          class="content content--case"
           aria-labelledby="case-modal-title"
         >
           <article class="case-card">
             <div class="case-card__label">
               <span class="case-card__eyebrow fs-24 fw-700 ff-pre"
-                >CASE 04</span
+                >CASE 06</span
               >
               <p class="neon-01 fs-28 fw-700 ff-pre">모달 인터렉션</p>
             </div>
@@ -282,6 +446,54 @@
                 class="case-card__link fs-22 fw-700"
                 href="./project-righthand.html"
                 >오른손 프로젝트 보기</a
+              >
+            </div>
+          </article>
+        </section>
+        <section
+          class="content content--case"
+          aria-labelledby="case-fragment-title"
+        >
+          <article class="case-card">
+            <div class="case-card__label">
+              <span class="case-card__eyebrow fs-24 fw-700 ff-pre"
+                >CASE 07</span
+              >
+              <p class="neon-01 fs-28 fw-700 ff-pre">
+                Fragment 기반 공통 UI 마크업 구조화
+              </p>
+            </div>
+            <div class="case-card__body">
+              <h2 id="case-fragment-title" class="fs-40 fw-800">
+                공통 영역 분리를 통한 재사용 가능한 마크업 구조 설계
+              </h2>
+              <img
+                class="case-card__img"
+                src="./img/모션업프래그먼트.png"
+                alt="재사용가능한 마크업 설계"
+              />
+              <ul class="case-card__desc fs-24 fw-500">
+                <li>공통 UI Fragment 분리를 고려한 초기 마크업 설계</li>
+                <li>공통 UI 수정 및 기능 확장을 고려한 구조 구성</li>
+              </ul>
+              <ul class="case-card__list fs-20 fw-500">
+                <li>
+                  <strong>설계목표</strong>반복되는 공통 UI를 Fragment 단위로
+                  분리하기 쉬운 마크업 구조 설계
+                </li>
+                <li>
+                  <strong>구조</strong>앱바·하단 내비게이션·토스트 알림·검색
+                  모달을 페이지별 콘텐츠 영역과 분리해 구성
+                </li>
+                <li>
+                  <strong>효과</strong>공통 UI 수정 시 변경 범위 최소화 ·
+                  페이지별 마크업 재사용성 및 유지보수성 확보
+                </li>
+              </ul>
+              <a
+                class="case-card__link fs-22 fw-700"
+                href="./project-motionup.html"
+                >모션업 프로젝트 보기</a
               >
             </div>
           </article>
